@@ -1,0 +1,121 @@
+/* Estilos Gerais do Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5; /* Um cinza claro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    min-height: 100vh; /* Ocupa a altura total da viewport */
+    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #0056b3; /* Um tom de azul */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container principal para o formulário */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Largura máxima para formulários em telas maiores */
+    box-sizing: border-box;
+    margin-bottom: 30px; /* Espaço entre o formulário e a lista */
+}
+
+/* Estilos para os rótulos (labels) */
+label {
+    display: block; /* Cada label em uma nova linha */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para os campos de entrada (inputs) */
+input[type="text"] {
+    width: calc(100% - 20px); /* Ocupa quase 100% da largura do pai menos o padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que padding não aumente a largura total */
+}
+
+/* Placeholder text color */
+input::placeholder {
+    color: #bbb;
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #007bff; /* Azul padrão */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%; /* Ocupa a largura total */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilos para a lista de alunos */
+ul#listaAlunos {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    width: 100%;
+    max-width: 450px;
+}
+
+ul#listaAlunos li {
+    background-color: #e6f2ff; /* Um azul bem claro */
+    border: 1px solid #b3d9ff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+    color: #444;
+}
+
+/* Responsividade Básica */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container,
+    ul#listaAlunos {
+        margin: 10px auto; /* Centraliza e reduz a margem em telas pequenas */
+        padding: 20px;
+        max-width: 95%; /* Ocupa quase a largura total da tela */
+    }
+
+    input[type="text"],
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    ul#listaAlunos li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

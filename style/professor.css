@@ -1,0 +1,124 @@
+/* style.css (Reutilizando e Ajustando) */
+
+/* Estilos Gerais do Corpo (Aplicam-se a todas as páginas linkadas) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Títulos (Aplicam-se a todas as páginas linkadas) */
+h1, h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container principal para formulários (Aplicam-se a todas as páginas linkadas) */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+/* Estilos para os rótulos (Aplicam-se a todas as páginas linkadas) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para os campos de entrada (Aplicam-se a todas as páginas linkadas) */
+input[type="text"],
+input[type="number"] { /* Adicionado input type="number" */
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o botão (Aplicam-se a todas as páginas linkadas) */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para listas (Aplicam-se a todas as páginas linkadas, com IDs específicos) */
+ul#listaProfessores, /* Adicionado ID específico para professores */
+ul#listaAlunos { /* ID para a lista de alunos, se estiver no mesmo CSS */
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 450px;
+}
+
+ul#listaProfessores li, /* Estilos para itens da lista de professores */
+ul#listaAlunos li { /* Estilos para itens da lista de alunos */
+    background-color: #e6f2ff;
+    border: 1px solid #b3d9ff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+    color: #444;
+}
+
+/* Responsividade Básica (Aplicam-se a todas as páginas linkadas) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container,
+    ul#listaProfessores,
+    ul#listaAlunos {
+        margin: 10px auto;
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    ul#listaProfessores li,
+    ul#listaAlunos li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

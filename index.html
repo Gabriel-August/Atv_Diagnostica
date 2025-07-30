@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Aluno</title>
+    <script src="js/aluno.js"></script>
+    <link rel="stylesheet" href="style/aluno.css"> </head>
+<body>
+    <h1>Cadastro Aluno</h1>
+
+    <div class="form-container">
+        <label for="cadastroA">Nome Aluno:</label>
+        <input type="text" id="cadastroA" />
+        <label for="email">Email do Aluno:</label>
+        <input type="text" id="email" placeholder="aluno.escola@gmail.com" />
+        
+        <label for="cpfAluno">CPF do aluno</label>
+        <input type="text" id="cpfAluno" placeholder="ex 123.123.123-00" />
+        
+        <button id="cadastrarAlunoBtn">Cadastrar Aluno</button>
+    </div>
+
+    <h2>Alunos Cadastrados</h2>
+    <ul id="listaAlunos"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

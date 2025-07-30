@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Professor</title>
+    <script src="js/professor.js"></script>
+    <link rel="stylesheet" href="style/professor.css">
+</head>
+<body>
+    <h1>Área do Professor</h1>
+
+    <div class="form-container">
+        <h2>Cadastro Professor</h2>
+        <label for="nomeProf">Nome Do Professor:</label>
+        <input type="text" id="nomeProf">
+        
+        <label for="emailProf">Email do Professor:</label>
+        <input type="text" id="emailProf" placeholder="professor@gmail.com">
+        
+        <label for="cpfProf">CPF:</label>
+        <input type="number" id="cpfProf" placeholder="Apenas 11 dígitos">
+        
+        <label for="especialidadeProf">Área de atuação:</label>
+        <input type="text" id="especialidadeProf" placeholder="ex: Informática">
+        
+        <button id="finalizarCadastroProfBtn">Finalizar Cadastro</button>
+    </div>
+
+    <h2>Professores Cadastrados</h2>
+    <ul id="listaProfessores"></ul>
+
+    
+</body>
+</html>
