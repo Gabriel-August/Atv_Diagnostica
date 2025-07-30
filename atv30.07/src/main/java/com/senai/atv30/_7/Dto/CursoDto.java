@@ -11,6 +11,6 @@ public class CursoDto {
 
     private Long id;
     private String nome;
-    private String area;
+    private String materia;
     private int cargaHoraria;
 }
