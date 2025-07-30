@@ -3,30 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/curso.js"defer ></script>
+    <script src="js/curso.js" defer></script>
     <link rel="stylesheet" href="style/style.css">
     <title>Cadastro de Cursos</title>
-    </head>
+</head>
 <body>
     <h1>Cadastro de Cursos</h1>
-    <br>
-    <label for="nome">Nome do Curso:</label>
-    <input type="text" id="nome">
-    <br/>
-    <br>
-    <label for="materia">Materias:</label>
-    <input type="text" id="materia">
-    <br/>
-    <br>
-    <label for="cargaHoraria">Carga Horaria:</label>
-    <input type="text" id="cargaHoraria">
-    <br/>
-
-    <button id="addCursoBtn">Adicionar Curso</button>
+    <div class="form-container">
+        <label for="nome">Nome do Curso:</label>
+        <input type="text" id="nome">
+        
+        <label for="materia">Matérias:</label>
+        <input type="text" id="materia">
+        
+        <label for="cargaHoraria">Carga Horária:</label>
+        <input type="text" id="cargaHoraria">
+        
+        <button id="addCursoBtn">Adicionar Curso</button>
+    </div>
 
     <h2>Cursos Cadastrados</h2>
     <ul id="listaCursos"></ul>
-
-    
 </body>
 </html>
