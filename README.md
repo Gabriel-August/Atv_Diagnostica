@@ -1,1 +1,3 @@
-"# Atv_Diagnostica" 
+Diogo Campos
+
+Gabriel Augusto
